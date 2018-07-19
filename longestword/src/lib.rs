@@ -44,6 +44,13 @@ mod tests {
 
             assert_eq!(longest_word(sen), "cake");
         }
+
+        #[test]
+        fn with_two_longest_words() {
+            let sen = "I love dogs!";
+
+            assert_eq!(longest_word(sen), "love");
+        }
     }
 
     mod strip_non_alpha_numeric {
